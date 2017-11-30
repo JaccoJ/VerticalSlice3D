@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class player_mesh : MonoBehaviour
 {
-    public MeshCollider cl;
+    private MeshCollider meshCol;
     public GameObject playerObject;
     private player _player; 
 
 	void Start()
     {
         _player = playerObject.GetComponent<player>();
+        meshCol = gameObject.GetComponent<MeshCollider>();
 	}
+
+    public MeshCollider GetCol()
+    {
+        return meshCol;
+    }
 }

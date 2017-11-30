@@ -192,6 +192,34 @@ Transform:
   m_Father: {fileID: 1387420300}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &780696202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 780696203}
+  m_Layer: 0
+  m_Name: model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780696203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780696202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 906073934}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816309397
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +297,7 @@ GameObject:
   - component: {fileID: 906073936}
   - component: {fileID: 906073938}
   - component: {fileID: 906073935}
+  - component: {fileID: 906073939}
   m_Layer: 0
   m_Name: physics
   m_TagString: Untagged
@@ -285,7 +314,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 780696203}
   m_Father: {fileID: 1387420300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -358,6 +388,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &906073939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906073933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daaf86dd3249aec489fae6fe64388474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 1387420293}
 --- !u!1 &910359716
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +486,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221643606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1221643608}
+  - component: {fileID: 1221643607}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1221643607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221643606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcbe8d7cd18eeb499d82ac42a94df9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisThreshhold: 0.2
+--- !u!4 &1221643608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221643606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1387420293
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +540,6 @@ GameObject:
   - component: {fileID: 1387420297}
   - component: {fileID: 1387420296}
   - component: {fileID: 1387420295}
-  - component: {fileID: 1387420294}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -465,18 +547,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1387420294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1387420293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daaf86dd3249aec489fae6fe64388474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 0}
 --- !u!114 &1387420295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,6 +558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cb9c84729148c428dfc1fbbfa17453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  physicsObject: {fileID: 906073933}
+  managerObject: {fileID: 1221643606}
+  playerObject: {fileID: 1387420293}
   currentDir: 
   newVectorDir: {x: 0, y: 0, z: 0}
   newVectorPos: {x: 0, y: 0, z: 0}
@@ -502,8 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341c8fe2e2499bd4583ea4721a81dcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cl: {fileID: 0}
-  playerObject: {fileID: 0}
+  playerObject: {fileID: 1387420293}
 --- !u!114 &1387420297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: 
   speed: 0
+  scriptMovement: {fileID: 1387420293}
 --- !u!4 &1387420300
 Transform:
   m_ObjectHideFlags: 0
@@ -553,5 +626,5 @@ Transform:
   - {fileID: 906073934}
   - {fileID: 477292552}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
