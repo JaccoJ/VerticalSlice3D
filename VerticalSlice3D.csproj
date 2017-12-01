@@ -225,14 +225,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Daan_Player_Scr\daan_Inputmanager.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_animation.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_attack.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_mesh.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_movement.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_physics.cs" />
-    <Compile Include="Assets\Scripts\Menus.cs" />
+    <Compile Include="Assets\Scripts\Input\Inputmanager.cs" />
+    <Compile Include="Assets\Scripts\Input\Strings.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\TestingUI.cs" />
+    <Compile Include="Assets\Scripts\UI-Scripts\Menus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

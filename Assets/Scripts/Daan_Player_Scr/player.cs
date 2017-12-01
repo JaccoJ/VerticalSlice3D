@@ -6,11 +6,15 @@ public class player : MonoBehaviour {
 
     public string tag;
     public float speed;
+    public GameObject scriptMovement;
     public enum PlayerState {idle, walking, attack};
     private PlayerState _state;
+    private player_movement _movement;
+
 
     void Start()
     {
+        _movement = scriptMovement.GetComponent<player_movement>();
         this.tag = gameObject.tag;
 		if(speed == null) { speed = 1.4f; }
         if(tag == null || tag == "Untagged") {tag = "player"; }
@@ -27,6 +31,13 @@ public class player : MonoBehaviour {
         switch (this._state)
         {
             case PlayerState.idle:
+                /*if (_movement.currentDir == "up" ||
+                    _movement.currentDir == "down" ||
+                    _movement.currentDir == "right" ||
+                    _movement.currentDir == "left")
+                {
+                    
+                }*/
                 break;
             case PlayerState.attack:
                 break;
