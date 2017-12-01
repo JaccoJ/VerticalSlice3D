@@ -54,13 +54,13 @@
      <Compile Include="Assets\Scripts\AI\AiAttack.cs" />
      <Compile Include="Assets\Scripts\AI\AiMovement.cs" />
      <Compile Include="Assets\Scripts\AI\AiRecoil.cs" />
-     <Compile Include="Assets\Scripts\Daan_Player_Scr\daan_Inputmanager.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player_animation.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player_attack.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player_mesh.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player_movement.cs" />
      <Compile Include="Assets\Scripts\Daan_Player_Scr\player_physics.cs" />
+     <Compile Include="Assets\Scripts\Input\Inputmanager.cs" />
      <Compile Include="Assets\Scripts\Movement\inputManager.cs" />
      <Compile Include="Assets\Scripts\Movement\playerMovement.cs" />
      <Compile Include="Assets\Scripts\Movement\Strings.cs" />
