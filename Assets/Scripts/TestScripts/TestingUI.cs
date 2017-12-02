@@ -1,25 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestingUI : MonoBehaviour
-{
+public class TestingUI : MonoBehaviour {
     [SerializeField]
     private GameObject _lockOn;
 
     private bool checkLock = true;
 
-    void Update()
-    {
+	void Update () {
         if (Input.GetKeyDown(KeyCode.F))
         {
             LockOn();
         }
-    }
+	}
 
     void LockOn()
     {
-        if (checkLock == true)
+        if(checkLock == true)
         {
             _lockOn.SetActive(false);
             checkLock = false;
@@ -29,6 +28,6 @@ public class TestingUI : MonoBehaviour
             _lockOn.SetActive(true);
             checkLock = true;
         }
-
+          
     }
 }
