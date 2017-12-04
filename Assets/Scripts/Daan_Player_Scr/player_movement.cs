@@ -104,10 +104,10 @@ public class player_movement : MonoBehaviour
         {
             case "up":
                 _player.SetState(player.PlayerState.walking);
-                return Vector3.forward * frontalMultiplier;
+                return Vector3.forward * this.frontalMultiplier * Time.deltaTime;
             case "down":
                 _player.SetState(player.PlayerState.walking);
-                return Vector3.back * frontalMultiplier;
+                return Vector3.back * this.frontalMultiplier * Time.deltaTime;
             default:
                 Debug.Log("FrontalMovement: No value in parameter");
                 return new Vector3(0,0);
@@ -119,9 +119,9 @@ public class player_movement : MonoBehaviour
         switch (dir)
         {
             case "left":
-                return new Vector3(0,-1) * rotationMultiplier;
+                return new Vector3(0,-1) * this.rotationMultiplier * Time.deltaTime;
             case "right":
-                return new Vector3(0,1) * rotationMultiplier;                
+                return new Vector3(0,1) * this.rotationMultiplier * Time.deltaTime;                
             case "none":
                 return new Vector3(0,0);
             default:

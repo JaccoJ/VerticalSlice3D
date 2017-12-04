@@ -563,8 +563,8 @@ MonoBehaviour:
   playerObject: {fileID: 1387420293}
   currentInpPos: none
   currentInpDir: none
-  frontalMultiplier: 10
-  rotationMultiplier: 10
+  frontalMultiplier: 5
+  rotationMultiplier: 100
 --- !u!114 &1387420296
 MonoBehaviour:
   m_ObjectHideFlags: 0
