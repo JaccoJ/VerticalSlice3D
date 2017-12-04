@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
 
+    //Connected to the player Gameobject
+
+
     public string tag;
     public float speed;
     public GameObject scriptMovement;
