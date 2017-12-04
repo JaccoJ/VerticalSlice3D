@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Inputmanager : MonoBehaviour {
 
+    //Connected to the manager Gameobject
+
+
     /*
      * This float allows for tighter or looser movement. It's confusing. 
      * You can further edit this in Project Settings -> Input
