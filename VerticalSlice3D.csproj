@@ -239,6 +239,7 @@
     <Compile Include="Assets\Scripts\Movement\playerMovement.cs" />
     <Compile Include="Assets\Scripts\Movement\Strings.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestingUI.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\TestMoveScript.cs" />
     <Compile Include="Assets\Scripts\UI-Scripts\Menus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

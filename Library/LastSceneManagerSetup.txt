@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Scene_Daan.unity
-=======
-- path: Assets/Scenes/TestScene_Jeff.unity
->>>>>>> 1d7371094d67e2188ccd5c8b6362cc376de0b4af
   isLoaded: 1
   isActive: 1

@@ -8,7 +8,6 @@ public class player_physics : MonoBehaviour
 
     private Rigidbody _rb;
     private player_movement _movement;
-    private GameObject player_gameobject;
 
     public GameObject playerObject;
 
@@ -19,14 +18,14 @@ public class player_physics : MonoBehaviour
     {
         this._rb = gameObject.GetComponent<Rigidbody>();
         //this._currentDir = _rb.rotation.eulerAngles;
-        player_gameobject = this.gameObject.GetComponentInParent<GameObject>();
 
     }
 	
 	void Update()
     {
-        this._rb.AddForce(this._forcePos);
-        player_gameobject.transform.Rotate(this._currentDir);
+        playerObject.transform.Translate(this._forcePos);
+        //this._rb.AddForce(this._forcePos);
+        playerObject.transform.Rotate(this._currentDir);
         
     }
 
