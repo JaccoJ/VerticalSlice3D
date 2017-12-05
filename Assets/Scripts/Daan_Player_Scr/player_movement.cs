@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class player_movement : MonoBehaviour
 {
+    //Connected to the player Gameobject
+
+
     public GameObject physicsObject;
     public GameObject managerObject;
     public GameObject playerObject;
@@ -12,11 +15,15 @@ public class player_movement : MonoBehaviour
     private player_physics _physics;
     private Inputmanager inputs;
 
-    public string currentDir = "none";
+
+    public string currentInpPos = "none";
+    public string currentInpDir = "none";
+
+    public float frontalMultiplier;
+    public float rotationMultiplier;
+
     private Vector3 _conceptVectorDir;
     private Vector3 _conceptVectorPos;
-    public Vector3 newVectorDir;
-    public Vector3 newVectorPos;
 
 
 
@@ -29,31 +36,64 @@ public class player_movement : MonoBehaviour
 	
 	void Update()
     {
-        this.currentDir = CheckInput();
-        this._conceptVectorDir = DirectionSwitch(this.currentDir);
+        //Check what the input manager has to say.
+        this.currentInpPos = CheckInputFrontal();
+        this.currentInpDir = CheckInputDirection();
+
+        //Preparing the vector3 values to be sended to the physics script.
+        this._conceptVectorDir = DirectionSwitch(this.currentInpDir);
+        this._conceptVectorPos = FrontalMovement(this.currentInpPos);
+
+        //Setting the vector3 values to the coresponding physics script.
+        _physics.SetForceDir(this._conceptVectorDir);
+        _physics.SetForcePos(this._conceptVectorPos);
 	}
 
-    public string CheckInput()
+    public string CheckInputFrontal()
     {
-        if (inputs.Left())
+        string res = null;
+        if (inputs.Up())
         {
-            return "left";
+            res = "up";
         }
-        else if (inputs.Up())
+        if (inputs.Down())
         {
-            return "up";
+            res = "down";
         }
-        else if (inputs.Right())
+
+        if (res != null)
         {
-            return "right";
-        }
-        else if (inputs.Down())
-        {
-            return "down";
+            Debug.Log(res);
+            return res;
         }
         else
         {
-            Debug.Log("CheckDirection: none inputted");
+            _player.SetState(player.PlayerState.idle);
+            Debug.Log("CheckInputFrontal: none inputted");
+            return "none";
+        }
+
+    }
+
+    public string CheckInputDirection()
+    {
+        string res = null;
+        if (inputs.Right())
+        {
+            res = "right";
+        }
+        if (inputs.Left())
+        {
+            res = "left";
+        }
+        if(res != null)
+        {
+            Debug.Log(res);
+            return res;
+        }
+        else
+        {
+            Debug.Log("CheckInputDirection: none inputted");
             return "none";
         }
     }
@@ -64,10 +104,10 @@ public class player_movement : MonoBehaviour
         {
             case "up":
                 _player.SetState(player.PlayerState.walking);
-                return Vector3.forward;
+                return Vector3.forward * this.frontalMultiplier * Time.deltaTime;
             case "down":
                 _player.SetState(player.PlayerState.walking);
-                return Vector3.back;
+                return Vector3.back * this.frontalMultiplier * Time.deltaTime;
             default:
                 Debug.Log("FrontalMovement: No value in parameter");
                 return new Vector3(0,0);
@@ -79,13 +119,12 @@ public class player_movement : MonoBehaviour
         switch (dir)
         {
             case "left":
-                return new Vector3(0,-1);
+                return new Vector3(0,-1) * this.rotationMultiplier * Time.deltaTime;
             case "right":
-                return new Vector3(0,1);                
+                return new Vector3(0,1) * this.rotationMultiplier * Time.deltaTime;                
             case "none":
                 return new Vector3(0,0);
             default:
-                _player.SetState(player.PlayerState.idle);
                 Debug.Log("DirectionSwitch: No value in parameter");
                 return new Vector3(0,0,0);                
         }
