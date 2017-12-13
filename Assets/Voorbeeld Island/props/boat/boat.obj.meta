@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b61b9cd6a282c5046af41881f49c852f
 timeCreated: 1512400929
+=======
+guid: bd6ca0259facc4b479d026aaee8e37c6
+timeCreated: 1512478847
+>>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -37,7 +42,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ext_10000_0
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 0d62370b4012e134b818dadf3818d22b, type: 2}
+=======
+    second: {fileID: 2100000, guid: 44657a50bd399304fa47847c77f74d11, type: 2}
+>>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
   materials:
     importMaterials: 1
     materialName: 0

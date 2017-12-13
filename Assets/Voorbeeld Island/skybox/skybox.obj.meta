@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 15e47bd3c57f0e0498c9235ba4d118fa
 timeCreated: 1512400924
+=======
+guid: 8058a1463ee07a7479904434fc464d1e
+timeCreated: 1512478841
+>>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -47,12 +52,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skybox_0_0
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 3b14b6ceb8d01584193ad1b77995c389, type: 2}
+=======
+    second: {fileID: 2100000, guid: f94eac43df7ac8a4fa0f14337b0ec122, type: 2}
+>>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skybox_1_0
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 173aed311a3c36e4e886d5923ae40d83, type: 2}
+=======
+    second: {fileID: 2100000, guid: 2c7957d60bfad394dbed8f43f64f615e, type: 2}
+>>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
   materials:
     importMaterials: 1
     materialName: 0

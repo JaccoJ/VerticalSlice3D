@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: a04b1d6502013cb498db9f226f44d3b4
+timeCreated: 1512935805
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group
+    100004: group1
+    100006: group2
+    100008: head
+    100010: IK__R_been
+    100012: IK_L_been
+    100014: IK_L_duim
+    100016: IK_L_hand
+    100018: IK_L_middelvinger
+    100020: IK_L_pink
+    100022: IK_L_ringvinger
+    100024: IK_L_vingers
+    100026: IK_L_voet
+    100028: IK_L_wijsvinger
+    100030: IK_R_hand
+    100032: IK_R_vingers
+    100034: IK_R_voet
+    100036: joint1
+    100038: joint1 1
+    100040: joint10
+    100042: joint10 1
+    100044: joint2
+    100046: joint2 1
+    100048: joint2 2
+    100050: joint2 3
+    100052: joint2 4
+    100054: joint2 5
+    100056: joint2 6
+    100058: joint2 7
+    100060: joint3
+    100062: joint3 1
+    100064: joint3 2
+    100066: joint3 3
+    100068: joint3 4
+    100070: joint3 5
+    100072: joint3 6
+    100074: joint3 7
+    100076: joint4
+    100078: joint4 1
+    100080: joint5
+    100082: joint5 1
+    100084: joint6
+    100086: joint6 1
+    100088: joint7
+    100090: joint7 1
+    100092: joint8
+    100094: joint8 1
+    100096: joint9
+    100098: joint9 1
+    100100: L_ankle
+    100102: L_arm
+    100104: L_arm_samen
+    100106: L_been
+    100108: L_elbow
+    100110: L_hand_base
+    100112: L_hiel
+    100114: L_hip
+    100116: L_knee
+    100118: L_shoulder
+    100120: L_teen
+    100122: L_thight_roll
+    100124: L_under_arm_roll
+    100126: L_upper_arm_roll
+    100128: neck_base
+    100130: pCube6
+    100132: pelvis
+    100134: R_ankle
+    100136: R_arm
+    100138: R_arm_samen
+    100140: R_been
+    100142: R_elbow
+    100144: R_hand_base
+    100146: R_hiel
+    100148: R_hip
+    100150: R_knee
+    100152: R_shoulder
+    100154: R_teen
+    100156: R_thight_roll
+    100158: R_under_arm_roll
+    100160: R_upper_arm_roll
+    100162: spline_1
+    100164: spline_2
+    100166: torso2
+    100168: torso2_vtx_333_
+    100170: torso2_vtx_333_1
+    100172: torso2_vtx_333_2
+    100174: transform1
+    100176: transform2
+    100178: transform3
+    100180: transform4
+    100182: Wakka1:Mesh
+    400000: //RootNode
+    400002: group
+    400004: group1
+    400006: group2
+    400008: head
+    400010: IK__R_been
+    400012: IK_L_been
+    400014: IK_L_duim
+    400016: IK_L_hand
+    400018: IK_L_middelvinger
+    400020: IK_L_pink
+    400022: IK_L_ringvinger
+    400024: IK_L_vingers
+    400026: IK_L_voet
+    400028: IK_L_wijsvinger
+    400030: IK_R_hand
+    400032: IK_R_vingers
+    400034: IK_R_voet
+    400036: joint1
+    400038: joint1 1
+    400040: joint10
+    400042: joint10 1
+    400044: joint2
+    400046: joint2 1
+    400048: joint2 2
+    400050: joint2 3
+    400052: joint2 4
+    400054: joint2 5
+    400056: joint2 6
+    400058: joint2 7
+    400060: joint3
+    400062: joint3 1
+    400064: joint3 2
+    400066: joint3 3
+    400068: joint3 4
+    400070: joint3 5
+    400072: joint3 6
+    400074: joint3 7
+    400076: joint4
+    400078: joint4 1
+    400080: joint5
+    400082: joint5 1
+    400084: joint6
+    400086: joint6 1
+    400088: joint7
+    400090: joint7 1
+    400092: joint8
+    400094: joint8 1
+    400096: joint9
+    400098: joint9 1
+    400100: L_ankle
+    400102: L_arm
+    400104: L_arm_samen
+    400106: L_been
+    400108: L_elbow
+    400110: L_hand_base
+    400112: L_hiel
+    400114: L_hip
+    400116: L_knee
+    400118: L_shoulder
+    400120: L_teen
+    400122: L_thight_roll
+    400124: L_under_arm_roll
+    400126: L_upper_arm_roll
+    400128: neck_base
+    400130: pCube6
+    400132: pelvis
+    400134: R_ankle
+    400136: R_arm
+    400138: R_arm_samen
+    400140: R_been
+    400142: R_elbow
+    400144: R_hand_base
+    400146: R_hiel
+    400148: R_hip
+    400150: R_knee
+    400152: R_shoulder
+    400154: R_teen
+    400156: R_thight_roll
+    400158: R_under_arm_roll
+    400160: R_upper_arm_roll
+    400162: spline_1
+    400164: spline_2
+    400166: torso2
+    400168: torso2_vtx_333_
+    400170: torso2_vtx_333_1
+    400172: torso2_vtx_333_2
+    400174: transform1
+    400176: transform2
+    400178: transform3
+    400180: transform4
+    400182: Wakka1:Mesh
+    4300000: Wakka1:Mesh
+    4300002: torso2_vtx_333_2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: torso2_vtx_333_2
+    13700002: Wakka1:Mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture000_png1
+    second: {fileID: 2100000, guid: e6d78834ea0ba0746b0cb4167fd49048, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture001_png1
+    second: {fileID: 2100000, guid: 19c680488c820584bb2be72026e31dc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture002_png1
+    second: {fileID: 2100000, guid: f49d2d2ec2af1c34498a5e2731ecfe94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture003_png1
+    second: {fileID: 2100000, guid: 62298706658a7f5488c1563289fc8e1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture004_png1
+    second: {fileID: 2100000, guid: 010b196eb21f7df4887ad227e28765ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture005_png1
+    second: {fileID: 2100000, guid: a658b4169fbcf864891b338e1f9863d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wakka1_default_material_texture006_png1
+    second: {fileID: 2100000, guid: 4beb201317d2f204e88c869092f5ddc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: c4b8ef9771ca49a41ab679fb7d09cae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2
+    second: {fileID: 2100000, guid: 028cfa2370a3fca4ea81bd8bd1cddc87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 8209a51513dddd84c8c22c5c7c5f229c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
