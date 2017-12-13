@@ -7,6 +7,7 @@ public class player_attack : MonoBehaviour
     public GameObject sword;
     private bool _active;
     private MeshCollider _swordCollider;
+    private InputManager _input;
 	void Start()
     {
         _swordCollider = sword.GetComponent<MeshCollider>();
@@ -16,6 +17,15 @@ public class player_attack : MonoBehaviour
     {
 		
 	}
+
+    public bool AttackInput()
+    {
+        if (true)
+        {
+            return true;
+        }
+        return false;
+    }
 
     //Check if boolean _active is equal to turn on/off the Collider
     private void ChangeCollider(bool eval)

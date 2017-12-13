@@ -11,7 +11,18 @@ public class player_animation : MonoBehaviour
 	}
 	
 	void Update() {
-		
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+
+        }
 	}
     public void PlayAnimation()
     {
