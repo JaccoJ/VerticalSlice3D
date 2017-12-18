@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class AiAttack : MonoBehaviour {
 
+    public float speed = 10;
     public GameObject kogelSpawn;
     public GameObject kogelPrefab;
     //public GameObject Player;
     // Use this for initialization
     [SerializeField]
-    private float kogelspeed;
+    private float kogelspeed = 5;
     public Transform player2;
+    
 
 
-   
+	public void Awake()
+	{
+    
+	}
+
+
+
 
     public void Shoot()
     {
@@ -26,7 +34,11 @@ public class AiAttack : MonoBehaviour {
 
         kogelRigidbody.AddForce((player2.position - transform.position) * kogelspeed );
 
-        Destroy(kogel, 0.50f);
-    }
+        Destroy(kogel, 1.0f);    
+	}
 
+    public void Melee()
+    {
+        transform.Rotate(Vector3.up * Time.deltaTime * speed);
+    }
 }

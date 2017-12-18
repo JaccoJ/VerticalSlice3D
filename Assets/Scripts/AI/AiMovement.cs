@@ -5,65 +5,110 @@ using UnityEngine.UI;
 
 public class AiMovement : MonoBehaviour
 {
-     
+
+    public Transform target;
+    public bool fire;
+    public float MinAttackDist;
     public Transform Player;
     public bool retreat;
     [SerializeField]
     private int MoveSpeed = 4;
-    private int MaxDist = 4;
+
     [SerializeField]
     private float MinDist = 1;
-    private AiAttack _enemyshoot;
-    private float _fireRate = 1.50f;
+    private AiAttack _enemyattack;
+    private float _fireRate = 2.00f;
     private float _nextFire = 0.0f;
     private Rigidbody rb;
     private Vector3 retreatPoint;
-    private float speed;
-    
-   
+
+
+
+
+    private IEnumerator coroutine;
 
     void Start()
     {
-       rb = GetComponent<Rigidbody>();
+        print("starting: " + Time.time);
+
+        coroutine = WaitAndPrint(2.0f);
+        StartCoroutine(coroutine);
+
+        print("before WaitAndPrint finishes: " + Time.time);
+
     }
     
     void Awake()
     {
-        speed = MoveSpeed * Time.deltaTime;
-        _enemyshoot = GetComponent<AiAttack>();
+
+        Player = GameObject.FindWithTag("Player").transform;
+        _enemyattack = GetComponent<AiAttack>();
+		rb = GetComponent<Rigidbody>();
     }
 
-
-    void Update()
-    {
-       // retreatPoint =  new Vector3(0, 0, 0);
-        
-        Player = GameObject.FindWithTag("Player").transform;
-        transform.LookAt(Player);
+	void Update()
+	{
+        print(MoveSpeed);
 
         if (Vector3.Distance(transform.position, Player.position) >= MinDist)
-        {
+		{
+			Move();
+		}
 
-            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-            retreat = false;
-            print("go forward");
-          
-        }
-        if (Vector3.Distance(transform.position, Player.position) <= MinDist)
-        {
-            retreat = true;
+		else if (Vector3.Distance(transform.position, Player.position) <= MinDist)
+		{
+			Shoots();
+		}
 
-           /* if (retreat)
-            {
-                print("retreat");
-                transform.position += Vector3.MoveTowards(transform.position, retreatPoint, speed);
-                
-            }*/
-            if (Time.time > _nextFire)
-            {
-                _nextFire = Time.time + _fireRate;
-                _enemyshoot.Shoot();
-            }
+        if (fire == true)
+		{
+			MoveToPoint();
+		}   
+	}
+
+
+	void Shoots()
+	{
+        fire = true;
+		
+		/*if (Time.time > _nextFire )
+		{
+			_nextFire = Time.time + _fireRate;
+			_enemyattack.Shoot();
+            transform.LookAt(Player);
+        }*/
+	}
+
+	void Move()
+	{
+       
+		transform.LookAt(Player);
+        fire = false;
+        MoveSpeed = 3;
+		transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+		print("go forward");
+	}
+
+	void MoveToPoint()
+	{
+		MoveSpeed = 2;
+
+		float step = MoveSpeed * Time.deltaTime;
+		transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+		transform.LookAt(target);
+
+	}
+    private IEnumerator WaitAndPrint(float waitTime)
+    {
+        while (true)
+        {
+            
+            yield return new WaitForSeconds(waitTime);
+            transform.LookAt(Player);
+            _enemyattack.Shoot();
+            MoveSpeed = 0;
         }
     }
-}
+
+}   
