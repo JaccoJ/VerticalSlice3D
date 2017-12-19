@@ -9,18 +9,26 @@ public class player : MonoBehaviour {
 
     public string tag;
     public float speed;
-    public GameObject scriptMovement;
     public enum PlayerState {idle, walking, attack};
     private PlayerState _state;
     private player_movement _movement;
+    private player_animation _animation;
 
+    public GameObject animationObject;
+    public GameObject managerObject;
+
+    private Inputmanager _inputs;
 
     void Start()
     {
-        _movement = scriptMovement.GetComponent<player_movement>();
+        _animation = animationObject.GetComponent<player_animation>();
+        _movement = gameObject.GetComponent<player_movement>();
+        _inputs = managerObject.GetComponent<Inputmanager>();
+
         this.tag = gameObject.tag;
 		if(speed == null) { speed = 1.4f; }
         if(tag == null || tag == "Untagged") {tag = "player"; }
+       
 	}
 	
 	void Update()
@@ -34,19 +42,22 @@ public class player : MonoBehaviour {
         switch (this._state)
         {
             case PlayerState.idle:
-                /*if (_movement.currentDir == "up" ||
-                    _movement.currentDir == "down" ||
-                    _movement.currentDir == "right" ||
-                    _movement.currentDir == "left")
+                if (_movement.AnyInput())
                 {
-                    
-                }*/
+                    _state = PlayerState.walking;
+                }
                 break;
             case PlayerState.attack:
                 break;
             case PlayerState.walking:
+                if (!_movement.AnyInput())
+                {
+                    _state = PlayerState.idle;
+                }
+
                 break;
             default:
+                Debug.Log("No state stated");
                 break;
         }
     }
@@ -56,14 +67,51 @@ public class player : MonoBehaviour {
         switch (this._state)
         {
             case PlayerState.idle:
+                _animation.PlayAnimation("idle");
                 break;
             case PlayerState.attack:
                 break;
             case PlayerState.walking:
+                _animation.PlayAnimation("run");
                 break;
             default:
+                Debug.Log("No state to act for");
                 break;
         }
+    }
+
+    public string CheckInputMovement()
+    {
+        string res = null;
+        if (_inputs.Up())
+        {
+            res = "up";
+        }
+        if (_inputs.Down())
+        {
+            res = "down";
+        }
+        if (_inputs.Right())
+        {
+            res = "right";
+        }
+        if (_inputs.Left())
+        {
+            res = "left";
+        }
+
+        if (res != null)
+        {
+            //Debug.Log(res);
+            return res;
+        }
+        else
+        {
+            SetState(player.PlayerState.idle);
+            //Debug.Log("CheckInputFrontal: none inputted");
+            return "none";
+        }
+
     }
 
     public PlayerState GetState()

@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class AiRecoil : MonoBehaviour {
 
+    public float knockbackSpeed = 5f;
     private Rigidbody rb;
+    public Transform player;
     
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
+
 
     void OnCollisionEnter(Collision col)
     {
@@ -18,7 +21,9 @@ public class AiRecoil : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             print("hit");
-            rb.AddForce(new Vector3(-6,0,0) );
+
+            rb.AddForce((player.position + transform.position) * knockbackSpeed , ForceMode.Impulse);
+            
         }
     }
 }
