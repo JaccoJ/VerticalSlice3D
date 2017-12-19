@@ -228,6 +228,7 @@
     <Compile Include="Assets\Scripts\AI\AiAttack.cs" />
     <Compile Include="Assets\Scripts\AI\AiMovement.cs" />
     <Compile Include="Assets\Scripts\AI\AiRecoil.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_animation.cs" />
     <Compile Include="Assets\Scripts\Daan_Player_Scr\player_attack.cs" />

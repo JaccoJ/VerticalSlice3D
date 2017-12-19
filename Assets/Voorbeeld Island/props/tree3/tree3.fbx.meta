@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: bf9dead34fc0ca2408d26eed66223870
-timeCreated: 1512400930
-=======
-guid: 18f6932a5b31f174faa71113db6dd315
-timeCreated: 1512478808
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -184,29 +177,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material000
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: e6f6c64b36e202b44a02be115e20fabb, type: 2}
-=======
-    second: {fileID: 2100000, guid: f14e66b36b7cd9a43a523475f5f8d089, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: 4b5ac79429910ed49b17c1fd279f692c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material001
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 7d6bc0e2a884ee3498d4c0ecdee692c2, type: 2}
-=======
-    second: {fileID: 2100000, guid: 9eb213befebe2a942a871a879fab811d, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: 0733f59922925144692f261b5ac85bcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material002
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 3471f50373ee88b458763fa319ce0077, type: 2}
-=======
-    second: {fileID: 2100000, guid: e322bb13d8c3e304783903e365838b2f, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: d4a2bf9f244e2a04bbdc8ff98e8f9d04, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

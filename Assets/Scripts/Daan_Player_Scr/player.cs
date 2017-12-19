@@ -12,18 +12,23 @@ public class player : MonoBehaviour {
     public enum PlayerState {idle, walking, attack};
     private PlayerState _state;
     private player_movement _movement;
+    private player_animation _animation;
 
+    public GameObject animationObject;
     public GameObject managerObject;
 
     private Inputmanager _inputs;
 
     void Start()
     {
+        _animation = animationObject.GetComponent<player_animation>();
         _movement = gameObject.GetComponent<player_movement>();
         _inputs = managerObject.GetComponent<Inputmanager>();
+
         this.tag = gameObject.tag;
 		if(speed == null) { speed = 1.4f; }
         if(tag == null || tag == "Untagged") {tag = "player"; }
+       
 	}
 	
 	void Update()
@@ -49,8 +54,10 @@ public class player : MonoBehaviour {
                 {
                     _state = PlayerState.idle;
                 }
+
                 break;
             default:
+                Debug.Log("No state stated");
                 break;
         }
     }
@@ -60,12 +67,15 @@ public class player : MonoBehaviour {
         switch (this._state)
         {
             case PlayerState.idle:
+                _animation.PlayAnimation("idle");
                 break;
             case PlayerState.attack:
                 break;
             case PlayerState.walking:
+                _animation.PlayAnimation("run");
                 break;
             default:
+                Debug.Log("No state to act for");
                 break;
         }
     }

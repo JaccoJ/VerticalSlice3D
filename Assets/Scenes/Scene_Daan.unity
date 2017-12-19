@@ -826,7 +826,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1387420300}
   - component: {fileID: 1387420299}
-  - component: {fileID: 1387420298}
   - component: {fileID: 1387420297}
   - component: {fileID: 1387420296}
   - component: {fileID: 1387420295}
@@ -879,17 +878,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 0}
---- !u!114 &1387420298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1387420293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c392be096d2f50b42af88829be76499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1387420299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,6 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: 
   speed: 0
+  animationObject: {fileID: 1826607071}
   managerObject: {fileID: 1221643606}
 --- !u!4 &1387420300
 Transform:
@@ -1421,6 +1410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1826607072}
   - component: {fileID: 1826607073}
+  - component: {fileID: 1826607074}
   m_Layer: 0
   m_Name: character
   m_TagString: Untagged
@@ -1457,11 +1447,23 @@ Animator:
   m_Controller: {fileID: 9100000, guid: ecd1a6611b46a5d4ca06a787bcc61bae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1826607074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826607071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c392be096d2f50b42af88829be76499e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 1387420293}
 --- !u!1 &1978163898
 GameObject:
   m_ObjectHideFlags: 0

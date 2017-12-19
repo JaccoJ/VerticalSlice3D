@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 55537170e30e72e4d92b8c09205e91c4
-timeCreated: 1512400926
-=======
-guid: 67dbd226cb9844c47a8216d27fc0a6ef
-timeCreated: 1512478838
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -17,16 +10,13 @@ ModelImporter:
     2300000: rdmobj00
     3300000: rdmobj00
     4300000: rdmobj00
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material000
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 13c7380b0648d8d42a218864eedff92b, type: 2}
-=======
-    second: {fileID: 2100000, guid: 440091284444e3b48b70fc6803299e4e, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: 269d57f595c63f9488f006cf7ddda28a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -98,7 +88,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

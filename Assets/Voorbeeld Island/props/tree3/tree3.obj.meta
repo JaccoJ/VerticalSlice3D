@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 8d2598b8368e209449f2bffc71bbacd5
-timeCreated: 1512400928
-=======
-guid: 7621ad55749ecbe44b3e68914f847b06
-timeCreated: 1512478840
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -27,34 +20,23 @@ ModelImporter:
     4300000: rdmobj00
     4300002: rdmobj01
     4300004: rdmobj02
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material000
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 324ad1a9a7661a2459aaa577c609507b, type: 2}
-=======
-    second: {fileID: 2100000, guid: 4874dfa4121c533469ec612172e1c9de, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: f3269ffaec697254781504fa71e37938, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material001
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 801ece0b341d962468488a60f91e553b, type: 2}
-=======
-    second: {fileID: 2100000, guid: a1754becc0f4a534794368bbd0782d50, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: c17b933fda8380e43984875bdb52958d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: material002
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 55cd334dca52f28419c3a064c7d23478, type: 2}
-=======
-    second: {fileID: 2100000, guid: 6305cd1d30a463d489004a68465654c1, type: 2}
->>>>>>> ea5473961fc1202c0a25612ecad50cc2fea2f948
+    second: {fileID: 2100000, guid: 9cd8f6f62813107419e69c83c01db73c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -126,7 +108,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
