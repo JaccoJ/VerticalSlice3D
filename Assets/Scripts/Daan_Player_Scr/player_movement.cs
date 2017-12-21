@@ -71,6 +71,7 @@ public class player_movement : MonoBehaviour
     }
 
     /*
+    //Could be useable
     public string CheckInputDirection()
     {
         string res = null;
