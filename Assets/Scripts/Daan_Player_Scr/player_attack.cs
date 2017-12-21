@@ -5,12 +5,14 @@ using UnityEngine;
 public class player_attack : MonoBehaviour
 {
     public GameObject sword;
+    public GameObject managerObject;
     private bool _active;
     private MeshCollider _swordCollider;
-    private InputManager _input;
+    private Inputmanager _input;
 	void Start()
     {
-        _swordCollider = sword.GetComponent<MeshCollider>();
+        this._input = managerObject.GetComponent<Inputmanager>();
+        this._swordCollider = sword.GetComponent<MeshCollider>();
 	}
 	
 	void Update()
@@ -24,7 +26,10 @@ public class player_attack : MonoBehaviour
         {
             return true;
         }
-        return false;
+        else
+        {
+            return false;
+        }
     }
 
     //Check if boolean _active is equal to turn on/off the Collider
@@ -37,7 +42,7 @@ public class player_attack : MonoBehaviour
     {
         return this._active;
     }
-    public void SetActive(bool val)
+    public void SetActivity(bool val)
     {
         this._active = val;
     }

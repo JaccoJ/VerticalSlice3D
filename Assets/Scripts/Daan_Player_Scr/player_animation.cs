@@ -21,10 +21,19 @@ public class player_animation : MonoBehaviour
     }
 	
 	void Update() {
+        if (this._animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+        {
+            Debug.Log("im playing idle animation");
+        }
+        Debug.Log(this._animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+
+
         //when attacking
         if (Input.GetKeyDown(KeyCode.L))
         {
-            _animator.SetTrigger("first_attack");
+            _animator.SetBool("running", true);
+
+//            _animator.SetTrigger("first_attack");
         }
         //when running
         //when nothing
@@ -35,7 +44,6 @@ public class player_animation : MonoBehaviour
         switch (ani)
         {
             case "run":
-                _animator.SetBool("running", runAnim);
                 break;
             case "idle":
                 _animator.SetTrigger("setIdle");

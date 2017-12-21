@@ -13,6 +13,7 @@ public class player : MonoBehaviour {
     private PlayerState _state;
     private player_movement _movement;
     private player_animation _animation;
+    private float attackBegTiming;
 
     public GameObject animationObject;
     public GameObject managerObject;
@@ -46,15 +47,26 @@ public class player : MonoBehaviour {
                 {
                     _state = PlayerState.walking;
                 }
+                if (_inputs.ClickOne())
+                {
+                    _state = PlayerState.attack;
+                    attackBegTiming = Time.time;
+                }
                 break;
             case PlayerState.attack:
+                
+                
                 break;
             case PlayerState.walking:
                 if (!_movement.AnyInput())
                 {
                     _state = PlayerState.idle;
                 }
-
+                if (_inputs.ClickOne())
+                {
+                    _state = PlayerState.attack;
+                    attackBegTiming = Time.time;
+                }
                 break;
             default:
                 Debug.Log("No state stated");
@@ -70,6 +82,16 @@ public class player : MonoBehaviour {
                 _animation.PlayAnimation("idle");
                 break;
             case PlayerState.attack:
+                _animation.PlayAnimation("attack1");
+                if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                {
+
+                    _animation.PlayAnimation("attack2");
+                    if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                    {
+                        _animation.PlayAnimation("attack3");
+                    }
+                }
                 break;
             case PlayerState.walking:
                 _animation.PlayAnimation("run");
