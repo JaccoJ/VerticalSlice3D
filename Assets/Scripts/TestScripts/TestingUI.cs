@@ -29,6 +29,6 @@ public class TestingUI : MonoBehaviour
             _lockOn.SetActive(true);
             checkLock = true;
         }
-
+    //    _lockOn.SetActive(!_lockOn.activeSelf);
     }
 }

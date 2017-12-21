@@ -82,7 +82,8 @@ public class Menus : MonoBehaviour
             Time.timeScale = 1;
 
         }
-
+     //   PauseMenuCanvas.gameObject.SetActive(!PauseMenuCanvas.gameObject.activeSelf);
+     //   Time.timeScale = PauseMenuCanvas.gameObject.activeSelf ? 0 : 1;
     }
     
     public void LookAtMenu(Transform menuTransform)

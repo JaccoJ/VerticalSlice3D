@@ -15,8 +15,10 @@ public class CameraBehaviour : MonoBehaviour
 
     private bool _lookingAt;
     private bool _angleReached;
-    private Vector3 _cameraOffset = new Vector3(0f,1.75f,-4f);
 
+    private Vector3 _cameraOffset = new Vector3(0f,3f,-5f);
+    private Vector3 _cameraDistOffset = new Vector3(3f,0f,3f);
+    
    
 
 
@@ -30,6 +32,7 @@ public class CameraBehaviour : MonoBehaviour
 	
 	void Update ()
     {
+        _cameraDistOffset =_cameraTransform.position -  _player.transform.position;
         
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -38,16 +41,23 @@ public class CameraBehaviour : MonoBehaviour
 
         if (_lookingAt == true)
         {
-            _cameraTransform.position = new Vector3(_PlayerFollow.transform.position.x, _PlayerFollow.transform.position.y + _cameraOffset.y, _PlayerFollow.transform.position.z + _cameraOffset.z);
+           // _cameraTransform.position = new Vector3(_PlayerFollow.transform.position.x, _PlayerFollow.transform.position.y + _cameraOffset.y, _PlayerFollow.transform.position.z + _cameraOffset.z);
             _cameraTransform.LookAt(_target.transform);
             
             Vector3 CameraForward = Camera.main.transform.forward;
-            Vector3 disCamPlayer = _cameraTransform.position - _player.transform.position;
-            Vector3 _disPlayerEnemy = _target.transform.position - _player.transform.position;
+            Vector3 distCamPlayer = _cameraTransform.position - _player.transform.position;
+            Vector3 _distPlayerEnemy = _target.transform.position - _player.transform.position;
             Vector3 _CameraOffset = new Vector3(_PlayerFollow.transform.position.x - _cameraTransform.position.x, _PlayerFollow.transform.position.y+ _cameraOffset.y, _PlayerFollow.transform.position.z + _cameraOffset.z);
-            float angle = Vector3.Angle(CameraForward, _disPlayerEnemy);
+            float angle = Vector3.Angle(CameraForward, _distPlayerEnemy);
 
-            Debug.Log(angle);
+            Debug.Log(_distPlayerEnemy);
+
+            if(_target.transform.position.x - _player.transform.position.x >= _cameraDistOffset.x && _target.transform.position.z - _player.transform.position.z >= _cameraDistOffset.z)
+            {
+                
+            }
+
+            /*Debug.Log(angle);
             if (angle >= 20)
             {
                 _angleReached = true;
@@ -59,16 +69,16 @@ public class CameraBehaviour : MonoBehaviour
 
             if(_angleReached == true)
             {
-                _cameraTransform.position = _PlayerFollow.transform.position - _CameraOffset;
-            }
+                _cameraTransform.position = _PlayerFollow.transform.position + _CameraOffset;
+            }*/
         }
         else
         {
             _cameraTransform.position = _player.transform.position + _cameraOffset;
-            _cameraTransform.LookAt(_player.transform);
-            
-        }
-        
+            _cameraTransform.LookAt(_player.transform.position + new Vector3(0,0,0));            
+        }        
        
     }
+
+
 }
