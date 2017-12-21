@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6d920acf853939e438d1326a7afde46a
 timeCreated: 1512640516
+=======
+guid: a04b1d6502013cb498db9f226f44d3b4
+timeCreated: 1512935805
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -200,52 +205,92 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture000_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: dfc290073d38d5f4d9b94d50929d4e3c, type: 2}
+=======
+    second: {fileID: 2100000, guid: e6d78834ea0ba0746b0cb4167fd49048, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture001_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: c8d18cfe789a2fd46ae2b0b1b6907ae0, type: 2}
+=======
+    second: {fileID: 2100000, guid: 19c680488c820584bb2be72026e31dc3, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture002_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: b34cf2bde4a9ddf45bf64b20dd3f955d, type: 2}
+=======
+    second: {fileID: 2100000, guid: f49d2d2ec2af1c34498a5e2731ecfe94, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture003_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 91ce2dcc9ef9643459fcd1dedaf02ecc, type: 2}
+=======
+    second: {fileID: 2100000, guid: 62298706658a7f5488c1563289fc8e1d, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture004_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 89492760e1f7d7a49a6bc81128785b76, type: 2}
+=======
+    second: {fileID: 2100000, guid: 010b196eb21f7df4887ad227e28765ce, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture005_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 0245dada5914d7c489e0c6278b0b5361, type: 2}
+=======
+    second: {fileID: 2100000, guid: a658b4169fbcf864891b338e1f9863d6, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wakka1_default_material_texture006_png1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 5b3afec26f4b26849a1937b4f952e43b, type: 2}
+=======
+    second: {fileID: 2100000, guid: 4beb201317d2f204e88c869092f5ddc9, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: blinn1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 8e5262e45d4707241876c11c48fe57da, type: 2}
+=======
+    second: {fileID: 2100000, guid: c4b8ef9771ca49a41ab679fb7d09cae2, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: blinn2
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1eedbc1955de3e5459d5f8c13f529013, type: 2}
+=======
+    second: {fileID: 2100000, guid: 028cfa2370a3fca4ea81bd8bd1cddc87, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 14937b147c9325a4eb8158fcab22a1f6, type: 2}
+=======
+    second: {fileID: 2100000, guid: 8209a51513dddd84c8c22c5c7c5f229c, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   materials:
     importMaterials: 1
     materialName: 0

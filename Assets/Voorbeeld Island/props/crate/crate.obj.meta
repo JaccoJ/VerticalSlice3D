@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: 2b41cda76ab03974e8338c200629f87c
-timeCreated: 1512478836
-licenseType: Free
+guid: 747a115b6b49f3e4db660ec1f458ff0e
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -12,12 +10,13 @@ ModelImporter:
     2300000: prop2_g_10002_p_0
     3300000: prop2_g_10002_p_0
     4300000: prop2_g_10002_p_0
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ext_10002_0
-    second: {fileID: 2100000, guid: d18c07b5e2c7124408efe202254e6db6, type: 2}
+    second: {fileID: 2100000, guid: f14cba3683903e04fb3bd941ce41588f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -89,7 +88,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

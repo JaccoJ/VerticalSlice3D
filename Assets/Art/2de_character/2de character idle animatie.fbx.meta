@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 42374b1277f6eb748a00d5f788b527d5
 timeCreated: 1512640514
+=======
+guid: 8587c1908fdf01f49b972f59ba6f1f44
+timeCreated: 1512935805
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -234,17 +239,29 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: blinn1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 8e5262e45d4707241876c11c48fe57da, type: 2}
+=======
+    second: {fileID: 2100000, guid: c4b8ef9771ca49a41ab679fb7d09cae2, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: blinn2
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1eedbc1955de3e5459d5f8c13f529013, type: 2}
+=======
+    second: {fileID: 2100000, guid: 028cfa2370a3fca4ea81bd8bd1cddc87, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 14937b147c9325a4eb8158fcab22a1f6, type: 2}
+=======
+    second: {fileID: 2100000, guid: 8209a51513dddd84c8c22c5c7c5f229c, type: 2}
+>>>>>>> 3c2ae69861d793796e11cf79e767595ebbbcd889
   materials:
     importMaterials: 1
     materialName: 0

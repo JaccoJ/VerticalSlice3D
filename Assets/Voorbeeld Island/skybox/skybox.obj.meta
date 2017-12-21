@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: 8058a1463ee07a7479904434fc464d1e
-timeCreated: 1512478841
-licenseType: Free
+guid: 15e47bd3c57f0e0498c9235ba4d118fa
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -42,17 +40,18 @@ ModelImporter:
     4300008: sky_g_0_p_4
     4300010: sky_g_1_p_0
     4300012: sky_g_1_p_1
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skybox_0_0
-    second: {fileID: 2100000, guid: f94eac43df7ac8a4fa0f14337b0ec122, type: 2}
+    second: {fileID: 2100000, guid: 1d769b3e57ca72140b47bcba1cdd8437, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skybox_1_0
-    second: {fileID: 2100000, guid: 2c7957d60bfad394dbed8f43f64f615e, type: 2}
+    second: {fileID: 2100000, guid: 3dc2ff1f16a27c140829cdb9ddf3c3c6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -124,7 +123,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

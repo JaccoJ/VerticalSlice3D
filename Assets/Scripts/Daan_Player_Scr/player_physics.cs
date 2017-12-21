@@ -8,8 +8,10 @@ public class player_physics : MonoBehaviour
 
     private Rigidbody _rb;
     private player_movement _movement;
+    private Inputmanager _inputs;
 
     public GameObject playerObject;
+    public GameObject managerObject;
 
     private Vector3 _forcePos;
     private Vector3 _currentDir;
@@ -17,6 +19,8 @@ public class player_physics : MonoBehaviour
 	void Start()
     {
         this._rb = gameObject.GetComponent<Rigidbody>();
+        this._movement = playerObject.GetComponent<player_movement>();
+        this._inputs = managerObject.GetComponent<Inputmanager>();
         //this._currentDir = _rb.rotation.eulerAngles;
 
     }
@@ -24,18 +28,21 @@ public class player_physics : MonoBehaviour
 	void Update()
     {
         playerObject.transform.Translate(this._forcePos);
-        //this._rb.AddForce(this._forcePos);
         playerObject.transform.Rotate(this._currentDir);
-        
+        this._forcePos = new Vector3();
     }
 
     public void SetForcePos(Vector3 set)
     {
-        this._forcePos.z = set.z;
+        this._forcePos = set;
     }
 
     public void SetForceDir(Vector3 set)
     {
         this._currentDir.y = set.y;
+    }
+    public void SetForceDir(float set)
+    {
+        this._currentDir.y += set;
     }
 }
