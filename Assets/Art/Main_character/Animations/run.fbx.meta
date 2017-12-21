@@ -1,0 +1,380 @@
+fileFormatVersion: 2
+guid: e10be77a41a1045709344c7907ae8c8e
+timeCreated: 1513853133
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: boxer1:_DO_NOT_TOUCH
+    100002: boxer1:L_foot_orient
+    100004: boxer1:L_rig
+    100006: boxer1:L_toe_ctrl
+    100008: boxer1:L_toe_orient
+    100010: boxer1:RIG
+    100012: boxer1:torso_ctrl
+    100014: haar_riemzb:Group2
+    100016: haar_riemzb:Group3
+    100018: jasjezb:Group2
+    100020: ketting:Group2
+    100022: pasted__anklepivot_l
+    100024: pasted__back_end
+    100026: pasted__back_start
+    100028: pasted__backIK
+    100030: pasted__bodyCTRL
+    100032: pasted__chestCTRL
+    100034: pasted__clavicle_l
+    100036: pasted__clavicle_l1
+    100038: pasted__DO_NOT_TOUCH
+    100040: pasted__duim1_l
+    100042: pasted__duim1_l 1
+    100044: pasted__duim2_l
+    100046: pasted__duim2_l 1
+    100048: pasted__duim3_l
+    100050: pasted__duim3_l 1
+    100052: pasted__ellbowCTRL_l
+    100054: pasted__ellbowCTRL_l1
+    100056: pasted__ellbowCTRL_l2
+    100058: pasted__ellbowCTRL_l3
+    100060: pasted__footctrl_l
+    100062: pasted__footswiffle_l
+    100064: pasted__footzool_l
+    100066: pasted__group
+    100068: pasted__group1
+    100070: pasted__group2
+    100072: pasted__group3
+    100074: pasted__handCTRL_l
+    100076: pasted__handCTRL_l1
+    100078: pasted__head
+    100080: pasted__headCTRL1
+    100082: pasted__heelpeel_l
+    100084: pasted__hip
+    100086: pasted__hipCTRL
+    100088: pasted__hipCtrl_group
+    100090: pasted__IKbackcurve
+    100092: pasted__ikHandle1
+    100094: pasted__ikHandle2
+    100096: pasted__ikHandle3
+    100098: pasted__ikHandle4
+    100100: pasted__joint4
+    100102: pasted__joint6
+    100104: pasted__joint7
+    100106: pasted__kneeCTRL_l
+    100108: pasted__lowerbackcluster
+    100110: pasted__MasterCTRL
+    100112: pasted__middelvinger1_l
+    100114: pasted__middelvinger1_l 1
+    100116: pasted__middelvinger2_l
+    100118: pasted__middelvinger2_l 1
+    100120: pasted__middelvinger3_l
+    100122: pasted__middelvinger3_l 1
+    100124: pasted__neck
+    100126: pasted__neckBase
+    100128: pasted__nurbsCircle1
+    100130: pasted__nurbsCircle2
+    100132: pasted__pasted__anklepivot_l
+    100134: pasted__pasted__footctrl_l
+    100136: pasted__pasted__footswiffle_l
+    100138: pasted__pasted__footzool_l
+    100140: pasted__pasted__heelpeel_l
+    100142: pasted__pasted__ikHandle1
+    100144: pasted__pasted__joint4
+    100146: pasted__pasted__joint6
+    100148: pasted__pasted__joint7
+    100150: pasted__pasted__kneeCTRL_l
+    100152: pasted__pasted__sora
+    100154: pasted__pasted__toetapPivot_l
+    100156: pasted__pasted__toetip_l
+    100158: pasted__pasted__toetip_l 1
+    100160: pasted__pasted__toetippivot_l
+    100162: pasted__pasted__transform1
+    100164: pasted__pasted__transform9
+    100166: pasted__pink1_l
+    100168: pasted__pink1_l 1
+    100170: pasted__pink2_l
+    100172: pasted__pink2_l 1
+    100174: pasted__pink3_l
+    100176: pasted__pink3_l 1
+    100178: pasted__ringvinger1_l
+    100180: pasted__ringvinger1_l 1
+    100182: pasted__ringvinger2_l
+    100184: pasted__ringvinger2_l 1
+    100186: pasted__ringvinger3_l
+    100188: pasted__ringvinger3_l 1
+    100190: pasted__root
+    100192: pasted__shoulderCTRL_l
+    100194: pasted__shoulderCTRL_l1
+    100196: pasted__Sora
+    100198: pasted__spine01
+    100200: pasted__spine02
+    100202: pasted__spine03
+    100204: pasted__spine04
+    100206: pasted__spine05
+    100208: pasted__spineroot
+    100210: pasted__toetapPivot_l
+    100212: pasted__toetip_l
+    100214: pasted__toetip_l 1
+    100216: pasted__toetippivot_l
+    100218: pasted__transform13
+    100220: pasted__transform16
+    100222: pasted__transform32
+    100224: pasted__transform33
+    100226: pasted__transform34
+    100228: pasted__transform4
+    100230: pasted__transform9
+    100232: pasted__upperarm_l
+    100234: pasted__upperarm_l 1
+    100236: pasted__upperbackcluster
+    100238: pasted__wijsvinger1_l
+    100240: pasted__wijsvinger1_l 1
+    100242: pasted__wijsvinger2_l
+    100244: pasted__wijsvinger2_l 1
+    100246: pasted__wijsvinger3_l
+    100248: pasted__wijsvinger3_l 1
+    100250: pasted__wrist_l
+    100252: pasted__wrist_l 1
+    100254: //RootNode
+    100256: torsozb1:Group2
+    100258: zwaardzb:Group2
+    400000: boxer1:_DO_NOT_TOUCH
+    400002: boxer1:L_foot_orient
+    400004: boxer1:L_rig
+    400006: boxer1:L_toe_ctrl
+    400008: boxer1:L_toe_orient
+    400010: boxer1:RIG
+    400012: boxer1:torso_ctrl
+    400014: haar_riemzb:Group2
+    400016: haar_riemzb:Group3
+    400018: jasjezb:Group2
+    400020: ketting:Group2
+    400022: pasted__anklepivot_l
+    400024: pasted__back_end
+    400026: pasted__back_start
+    400028: pasted__backIK
+    400030: pasted__bodyCTRL
+    400032: pasted__chestCTRL
+    400034: pasted__clavicle_l
+    400036: pasted__clavicle_l1
+    400038: pasted__DO_NOT_TOUCH
+    400040: pasted__duim1_l
+    400042: pasted__duim1_l 1
+    400044: pasted__duim2_l
+    400046: pasted__duim2_l 1
+    400048: pasted__duim3_l
+    400050: pasted__duim3_l 1
+    400052: pasted__ellbowCTRL_l
+    400054: pasted__ellbowCTRL_l1
+    400056: pasted__ellbowCTRL_l2
+    400058: pasted__ellbowCTRL_l3
+    400060: pasted__footctrl_l
+    400062: pasted__footswiffle_l
+    400064: pasted__footzool_l
+    400066: pasted__group
+    400068: pasted__group1
+    400070: pasted__group2
+    400072: pasted__group3
+    400074: pasted__handCTRL_l
+    400076: pasted__handCTRL_l1
+    400078: pasted__head
+    400080: pasted__headCTRL1
+    400082: pasted__heelpeel_l
+    400084: pasted__hip
+    400086: pasted__hipCTRL
+    400088: pasted__hipCtrl_group
+    400090: pasted__IKbackcurve
+    400092: pasted__ikHandle1
+    400094: pasted__ikHandle2
+    400096: pasted__ikHandle3
+    400098: pasted__ikHandle4
+    400100: pasted__joint4
+    400102: pasted__joint6
+    400104: pasted__joint7
+    400106: pasted__kneeCTRL_l
+    400108: pasted__lowerbackcluster
+    400110: pasted__MasterCTRL
+    400112: pasted__middelvinger1_l
+    400114: pasted__middelvinger1_l 1
+    400116: pasted__middelvinger2_l
+    400118: pasted__middelvinger2_l 1
+    400120: pasted__middelvinger3_l
+    400122: pasted__middelvinger3_l 1
+    400124: pasted__neck
+    400126: pasted__neckBase
+    400128: pasted__nurbsCircle1
+    400130: pasted__nurbsCircle2
+    400132: pasted__pasted__anklepivot_l
+    400134: pasted__pasted__footctrl_l
+    400136: pasted__pasted__footswiffle_l
+    400138: pasted__pasted__footzool_l
+    400140: pasted__pasted__heelpeel_l
+    400142: pasted__pasted__ikHandle1
+    400144: pasted__pasted__joint4
+    400146: pasted__pasted__joint6
+    400148: pasted__pasted__joint7
+    400150: pasted__pasted__kneeCTRL_l
+    400152: pasted__pasted__sora
+    400154: pasted__pasted__toetapPivot_l
+    400156: pasted__pasted__toetip_l
+    400158: pasted__pasted__toetip_l 1
+    400160: pasted__pasted__toetippivot_l
+    400162: pasted__pasted__transform1
+    400164: pasted__pasted__transform9
+    400166: pasted__pink1_l
+    400168: pasted__pink1_l 1
+    400170: pasted__pink2_l
+    400172: pasted__pink2_l 1
+    400174: pasted__pink3_l
+    400176: pasted__pink3_l 1
+    400178: pasted__ringvinger1_l
+    400180: pasted__ringvinger1_l 1
+    400182: pasted__ringvinger2_l
+    400184: pasted__ringvinger2_l 1
+    400186: pasted__ringvinger3_l
+    400188: pasted__ringvinger3_l 1
+    400190: pasted__root
+    400192: pasted__shoulderCTRL_l
+    400194: pasted__shoulderCTRL_l1
+    400196: pasted__Sora
+    400198: pasted__spine01
+    400200: pasted__spine02
+    400202: pasted__spine03
+    400204: pasted__spine04
+    400206: pasted__spine05
+    400208: pasted__spineroot
+    400210: pasted__toetapPivot_l
+    400212: pasted__toetip_l
+    400214: pasted__toetip_l 1
+    400216: pasted__toetippivot_l
+    400218: pasted__transform13
+    400220: pasted__transform16
+    400222: pasted__transform32
+    400224: pasted__transform33
+    400226: pasted__transform34
+    400228: pasted__transform4
+    400230: pasted__transform9
+    400232: pasted__upperarm_l
+    400234: pasted__upperarm_l 1
+    400236: pasted__upperbackcluster
+    400238: pasted__wijsvinger1_l
+    400240: pasted__wijsvinger1_l 1
+    400242: pasted__wijsvinger2_l
+    400244: pasted__wijsvinger2_l 1
+    400246: pasted__wijsvinger3_l
+    400248: pasted__wijsvinger3_l 1
+    400250: pasted__wrist_l
+    400252: pasted__wrist_l 1
+    400254: //RootNode
+    400256: torsozb1:Group2
+    400258: zwaardzb:Group2
+    2300000: zwaardzb:Group2
+    3300000: zwaardzb:Group2
+    4300000: haar_riemzb:Group3
+    4300002: haar_riemzb:Group2
+    4300004: zwaardzb:Group2
+    4300006: torsozb1:Group2
+    4300008: jasjezb:Group2
+    4300010: ketting:Group2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: haar_riemzb:Group2
+    13700002: haar_riemzb:Group3
+    13700004: jasjezb:Group2
+    13700006: ketting:Group2
+    13700008: torsozb1:Group2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haar_riemzb_defaultMat1
+    second: {fileID: 2100000, guid: 4875f30138f1f4b11b5b94fc313f3c6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jasjezb_defaultMat1
+    second: {fileID: 2100000, guid: 4ae5a84a6da5c44638ff3588a6bc6718, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: torsozb1_defaultMat1
+    second: {fileID: 2100000, guid: 56659d0906dae40ab82034f16b319c12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zwaardzb_defaultMat1
+    second: {fileID: 2100000, guid: 2144fbcf7182941e0a77f2ea4cb5a6ba, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
