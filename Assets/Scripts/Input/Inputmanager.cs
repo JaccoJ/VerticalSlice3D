@@ -33,6 +33,10 @@ public class Inputmanager : MonoBehaviour {
     {
         return Input.GetAxis(Strings.Movement.HORIZONTAL) > axisThreshhold;
     }
+    public bool ClickOne()
+    {
+        return Input.GetMouseButton(0);
+    }
 
     /* 
      * functions that return values for the mouse position

@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 78989846b7485bc47af126f73042535b
 timeCreated: 1513821871
+=======
+<<<<<<< HEAD
+guid: 3153324ac2a16a84bb737f3eaccd823b
+timeCreated: 1513846546
+=======
+guid: b69ffa13a93ac4e02b1e04373e321d6d
+timeCreated: 1513853130
+>>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -291,22 +301,54 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: haar_riemzb1_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: b1674fed912dbec44ad9428db31a0851, type: 2}
+=======
+<<<<<<< HEAD
+    second: {fileID: 2100000, guid: a8acdd7cc2ceb0241af29552ca28dbbe, type: 2}
+=======
+    second: {fileID: 2100000, guid: 4875f30138f1f4b11b5b94fc313f3c6e, type: 2}
+>>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jasjezb1_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 5b299adab82c35b48b40a541f9b9c425, type: 2}
+=======
+<<<<<<< HEAD
+    second: {fileID: 2100000, guid: 30ed31fd59f34df47a964dff684a0bbf, type: 2}
+=======
+    second: {fileID: 2100000, guid: 4ae5a84a6da5c44638ff3588a6bc6718, type: 2}
+>>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: torsozb2_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 43365b942a5602e4b8f4d0c43606643e, type: 2}
+=======
+<<<<<<< HEAD
+    second: {fileID: 2100000, guid: 175f4ceb199e96149bf0dda11bcbbc2f, type: 2}
+=======
+    second: {fileID: 2100000, guid: 56659d0906dae40ab82034f16b319c12, type: 2}
+>>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: zwaardzb1_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 634584a10c900fe44bc27999e7a374dd, type: 2}
+=======
+<<<<<<< HEAD
+    second: {fileID: 2100000, guid: b1d47d4f4c9c337429aa6d9fca2a3b49, type: 2}
+=======
+    second: {fileID: 2100000, guid: 2144fbcf7182941e0a77f2ea4cb5a6ba, type: 2}
+>>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
   materials:
     importMaterials: 1
     materialName: 0

@@ -13,6 +13,8 @@ public class player : MonoBehaviour {
     private PlayerState _state;
     private player_movement _movement;
     private player_animation _animation;
+    private float attackBegTiming;
+    private bool failedAtt;
 
     public GameObject animationObject;
     public GameObject managerObject;
@@ -37,6 +39,7 @@ public class player : MonoBehaviour {
         StateAction();
 	}
 
+    //The conditions to change from states
     private void StateSwitch()
     {
         switch (this._state)
@@ -46,15 +49,36 @@ public class player : MonoBehaviour {
                 {
                     _state = PlayerState.walking;
                 }
+                if (_inputs.ClickOne())
+                {
+                    _state = PlayerState.attack;
+                    attackBegTiming = Time.time;
+                }
                 break;
             case PlayerState.attack:
+                if (failedAtt)
+                {
+                    if (_movement.AnyInput())
+                    {
+                        _state = PlayerState.walking;
+                    }
+                    else
+                    {
+                        _state = PlayerState.idle;
+                    }
+                }
+                
                 break;
             case PlayerState.walking:
                 if (!_movement.AnyInput())
                 {
                     _state = PlayerState.idle;
                 }
-
+                if (_inputs.ClickOne())
+                {
+                    _state = PlayerState.attack;
+                    attackBegTiming = Time.time;
+                }
                 break;
             default:
                 Debug.Log("No state stated");
@@ -62,6 +86,7 @@ public class player : MonoBehaviour {
         }
     }
 
+    //The general action of the states
     private void StateAction()
     {
         switch (this._state)
@@ -70,6 +95,26 @@ public class player : MonoBehaviour {
                 _animation.PlayAnimation("idle");
                 break;
             case PlayerState.attack:
+                if (!_animation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack1"))
+                {
+                    _animation.PlayAnimation("attack1");
+                }
+                if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                {
+
+                    attackBegTiming = Time.time;
+                    if (!_animation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack2"))
+                    {
+                        _animation.PlayAnimation("attack2");
+                    }
+                    if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                    {
+                        if (!_animation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack3"))
+                        {
+                            _animation.PlayAnimation("attack3");
+                        }
+                    }
+                }
                 break;
             case PlayerState.walking:
                 _animation.PlayAnimation("run");
@@ -107,7 +152,6 @@ public class player : MonoBehaviour {
         }
         else
         {
-            SetState(player.PlayerState.idle);
             //Debug.Log("CheckInputFrontal: none inputted");
             return "none";
         }

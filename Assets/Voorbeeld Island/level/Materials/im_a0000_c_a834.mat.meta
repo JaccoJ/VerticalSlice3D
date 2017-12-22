@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e3e739ae0caf7f448a30a8b42b018ca9
 timeCreated: 1513822223
+=======
+guid: 146e2c188b0e84846a24f710a7a82fb0
+timeCreated: 1513853213
+>>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
