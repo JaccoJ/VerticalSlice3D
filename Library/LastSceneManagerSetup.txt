@@ -1,16 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/etc/Test_build_Daan.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/TestScene_Jeff.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/etc/Test_build_Daan.unity
-=======
-- path: Assets/Scenes/Michael.unity
->>>>>>> ba8c37522df850651bd1ac6cc0d2392cdc6d0f8a
->>>>>>> f31f37ec0712d0ed645dfc987b8661c0e413de50
->>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
+- path: Assets/Scenes/Scene_Daan.unity
   isLoaded: 1
   isActive: 1
