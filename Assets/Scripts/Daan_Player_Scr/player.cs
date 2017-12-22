@@ -61,10 +61,12 @@ public class player : MonoBehaviour {
                     if (_movement.AnyInput())
                     {
                         _state = PlayerState.walking;
+                        failedAtt = false;
                     }
                     else
                     {
                         _state = PlayerState.idle;
+                        failedAtt = false;
                     }
                 }
                 
@@ -99,21 +101,31 @@ public class player : MonoBehaviour {
                 {
                     _animation.PlayAnimation("attack1");
                 }
-                if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming <= 1.8f))
                 {
 
-                    attackBegTiming = Time.time;
+                    
                     if (!_animation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack2"))
                     {
+
                         _animation.PlayAnimation("attack2");
+                        attackBegTiming = Time.time;
                     }
-                    if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming < 1.8f))
+                    if (_inputs.ClickOne() && ((Time.time - attackBegTiming) > 1.5f && Time.time - attackBegTiming <= 1.8f))
                     {
                         if (!_animation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attack3"))
                         {
                             _animation.PlayAnimation("attack3");
                         }
                     }
+                    if ((Time.time - attackBegTiming) > 1.8f)
+                    {
+                        failedAtt = true;
+                    }
+                }
+                if((Time.time - attackBegTiming) > 1.8f)
+                {
+                    failedAtt = true;
                 }
                 break;
             case PlayerState.walking:

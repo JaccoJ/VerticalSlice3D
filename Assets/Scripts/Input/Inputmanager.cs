@@ -35,7 +35,7 @@ public class Inputmanager : MonoBehaviour {
     }
     public bool ClickOne()
     {
-        return Input.GetMouseButton(0);
+        return Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.Space);
     }
 
     /* 
