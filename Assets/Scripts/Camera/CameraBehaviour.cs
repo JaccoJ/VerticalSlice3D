@@ -52,9 +52,9 @@ public class CameraBehaviour : MonoBehaviour
 
             Debug.Log(_distPlayerEnemy);
 
-            if(_target.transform.position.x - _player.transform.position.x >= _cameraDistOffset.x && _target.transform.position.z - _player.transform.position.z >= _cameraDistOffset.z)
+            if(_cameraTransform.transform.position.x - _player.transform.position.x >= _cameraDistOffset.x && _cameraTransform.transform.position.z - _player.transform.position.z >= _cameraDistOffset.z)
             {
-                
+                ParentSwitch(_player.transform);
             }
 
             /*Debug.Log(angle);
@@ -80,5 +80,9 @@ public class CameraBehaviour : MonoBehaviour
        
     }
 
+    public void ParentSwitch(Transform newParent)
+    {
+        _cameraTransform.transform.SetParent(newParent,false);
+    }
 
 }

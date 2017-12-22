@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 983b79e48cbb8554eae1d53dc1f558ec
 timeCreated: 1513846550
+=======
+guid: b638182db10258b4ea6349d34ccc3afb
+timeCreated: 1513821877
+>>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -42,22 +47,38 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: haar_riemzb_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: fa472cd678ef02443991b55112f65bdc, type: 2}
+=======
+    second: {fileID: 2100000, guid: 5146644867c55784f974adf2c59d205c, type: 2}
+>>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jasjezb_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 3f8ead81e729d6f459f848536ee00d80, type: 2}
+=======
+    second: {fileID: 2100000, guid: 0e341baaf067faf4db3bc1aab8ab7acb, type: 2}
+>>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: torsozb1_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 0ff9b14355d5d9c488d086641358a291, type: 2}
+=======
+    second: {fileID: 2100000, guid: 2bafd34da2eb09a4690318e60f616959, type: 2}
+>>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: zwaardzb_defaultMat1
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 82235c3c1ef6cd445b6d98a7e3125427, type: 2}
+=======
+    second: {fileID: 2100000, guid: 4aae25da59fca2f4e9ca0c1eeaecbc01, type: 2}
+>>>>>>> 31b4154e0663dc06949462711b4b33b0b7b754be
   materials:
     importMaterials: 1
     materialName: 0
